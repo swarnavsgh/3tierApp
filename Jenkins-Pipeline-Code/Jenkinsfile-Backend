@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git'
+                git branch: 'main', url: 'https://github.com/swarnavsgh/3tierApp.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -74,13 +74,13 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git'
+                git branch: 'main', url: 'https://github.com/swarnavsgh/3tierApp.git'
             }
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "2nd10WeeksofCloudOps-main"
-                GIT_USER_NAME = "CloudTechDevOps"
+                GIT_REPO_NAME = "3tierApp"
+                GIT_USER_NAME = "swarnavsgh"
             }
             steps {
                 dir('kubernetes-files') {
