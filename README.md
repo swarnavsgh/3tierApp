@@ -222,7 +222,7 @@ sudo npm install -g pm2
    cd backend 
 4 edit the .env file in bellow path if u dont have any .env file just create in below path
 
-2nd10WeeksofCloudOps-main.git/backend/.env
+https://github.com/swarnavsgh/3tierApp.git/backend/.env
 
 ### add this mater
 DB_HOST=book.rds.com
